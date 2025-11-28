@@ -2,6 +2,7 @@
 
 /* Globals variables*/
 :root {
+    font-size: 18px;
     /*Primary colors*/
     --color-background: white;
     --color-projects: #ebebeb;
@@ -110,7 +111,7 @@ h2 {
     max-width: 87.5rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding-top: 5.4rem;
 
 }
@@ -161,4 +162,64 @@ a {
 
 a:hover {
     color: var(--color-icons-accent);
+}
+@media (min-width:1000px) {
+
+    :root {
+        font-size: 16px;
+
+    }
+
+    .wrapper {
+        max-width: 87.5rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 5.4rem;
+
+    }
+
+
+    .wrapper>div {
+
+        padding: 1rem;
+
+
+    }
+
+    .container {
+        max-width: 87.5rem;
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+    .projects {
+        background: var(--color-projects);
+        padding-top: 6.6rem;
+        padding-bottom: 15rem;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 2.24rem;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        padding-top: 15rem;
+    }
+
+    .hero p {
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        color: var(--color-text-accent);
+        padding-top: 29px;
+    }
+
+
+
+
+
+
+
 }
