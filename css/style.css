@@ -18,7 +18,7 @@
 
 /* Fonts*/
 body {
-    font-size: 1rem;
+
     /* font */
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -30,9 +30,10 @@ body {
 }
 
 .container {
-    max-width: 23rem;
+    max-width: 25rem;
     width: 100%;
     margin: 0 auto;
+    padding: 0 1.5rem;
 
 
 }
@@ -44,7 +45,7 @@ p {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
@@ -69,14 +70,15 @@ h2 {
 
 .hero h1 {
     text-align: center;
-    font-size: 2.24rem;
+    font-size: 1.9rem;
     letter-spacing: 15px;
     text-transform: uppercase;
     padding-top: 15rem;
 }
 
 .hero p {
-    letter-spacing: 15px;
+    letter-spacing: 8px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: var(--color-text-accent);
     padding-top: 29px;
@@ -85,23 +87,29 @@ h2 {
 
 /*   Main    */
 .welcome {
-    padding-top: 9.4rem;
-    padding-bottom: 8rem;
+    padding-top: 5.8rem;
+    padding-bottom: 6.5rem;
 }
 
 .welcome p {
-    max-width: 45rem;
+    max-width: 16.2rem;
 }
 
 .projects {
     background: var(--color-projects);
-    padding-top: 6.6rem;
-    padding-bottom: 15rem;
+    padding-top: 6.4rem;
+    padding-bottom: 4.6rem;
+    margin-bottom: 4.3rem;
 }
 
 .projects p {
-    max-width: 37rem;
+    max-width: 17.6rem;
 }
+
+.projects h2 {
+    white-space: nowrap;
+}
+
 
 
 .wrapper {
@@ -110,14 +118,21 @@ h2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding-top: 5.4rem;
+    gap: 2rem;
 
 }
 
 
-.wrapper>div {
 
-    padding: 1rem;
+.wrapper div a,
+.wrapper div a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
+.wrapper div a img {
+    object-fit: cover;
 
 }
 
@@ -160,6 +175,7 @@ a {
 a:hover {
     color: var(--color-icons-accent);
 }
+
 @media (min-width:1000px) {
 
     :root {
@@ -168,43 +184,44 @@ a:hover {
     }
 
     .wrapper {
-        max-width: 87.5rem;
-        margin: 0 auto;
-        display: grid;
+
         grid-template-columns: repeat(2, 1fr);
-        padding-top: 5.4rem;
-
-    }
-
-
-    .wrapper>div {
-
-        padding: 1rem;
-
+        gap: 2.5rem;
 
     }
 
     .container {
         max-width: 87.5rem;
-        width: 100%;
-        margin: 0 auto;
-
 
     }
+
     .hero {
-    background: url(../images/banner.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 100%;
-    height: 100vh;
+        background: url(../images/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        height: 100vh;
 
+    }
 
-}
+    .welcome {
+        padding-top: 9.4rem;
+        padding-bottom: 8rem;
+    }
+
+    .welcome p {
+        max-width: 45rem;
+    }
+
+    .projects p {
+        max-width: 35rem;
+    }
+
 
     .projects {
-        background: var(--color-projects);
         padding-top: 6.6rem;
         padding-bottom: 15rem;
+        margin-bottom: 0;
     }
 
     .hero h1 {
@@ -222,10 +239,3 @@ a:hover {
         padding-top: 29px;
     }
 
-
-
-
-
-
-
-}
